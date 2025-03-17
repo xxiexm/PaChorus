@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="3D Head Animation with consistent emotion and dynamic interection driven by a hybrid song.">
+  <meta name="keywords" content="3D Head Animation, Song-driven">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Let's Chorus: Partner-aware Hybrid Song-Driven 3D Head Animation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/icon5.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Let's Chorus: Partner-aware Hybrid Song-Driven 3D Head Animation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Xiumei Xie<sup>1</sup>,</span>
+            <span class="author-block">
+              Zikai Huang<sup>1</sup>,</span>
+            <span class="author-block">
+              Wenhao Xu<sup>1</sup>,</span>
+            <span class="author-block">
+              Peng Xiao<sup>1</sup>,</span>
+            <span class="author-block">
+              Xuemiao Xu<sup>1,2*</sup>,</span>
+            <span class="author-block">
+              Huaidong Zhang<sup>1,2*</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>South China University of Technology,</span>
+            <span class="author-block"><sup>2</sup>Guangdong Engineering Center for Large Model and GenAI Technology,</span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/teaser_1.jpg" alt="Teaser Image" height="100%" />
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video> -->
+      <h2 class="subtitle has-text-centered">
+        <!-- <p>
+          Given a segment of chorus song consisting of background music and vocals as input, PaChorus can generate a interactive choral animation.
+        </p> -->
+        <span class="dnerf">Let's Chorus:</span> Given a segment of chorus song consisting of background music and vocals as input, PaChorus can generates a realistic animations with consistent emotion and dynamic head movement.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Singing is a vital form of human emotional expression and social interaction, distinguished from speech by its richer emotional nuances and freer expressive style. 
+            Thus, investigating 3D facial animation driven by singing holds significant research value. Our work focuses on 3D singing facial animation driven by mixed singing audio, 
+            and to the best of our knowledge, no prior studies have explored this area. Additionally, the absence of existing 3D singing datasets poses a considerable challenge. 
+          </p>
+          <p>
+            To address this, we collect a novel audiovisual dataset, ChorusHead which features synchronized mixed vocal audio and pseudo-3D flame motions for chorus singing. 
+            In addition, We propose a partner-aware 3D chorus head generation framework driven by mixed audio inputs. The proposed framework extracts emotional features from the background music 
+            and dependence between singers and models the head movement in a latent space from the Variational Autoencoder (VAE), enabling diverse interactive head animation generation. 
+            Extensive experimental results demonstrate that our approach effectively generates 3D facial animations of interacting singers, achieving notable improvements in realism and 
+            handling background music interference with strong robustness.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered ">
+        <div class="column is-full-width">
+          <div class="title_container">
+            <!-- <div class="box1"><img src="./resources/icon/method_logo.png" style="height: 45px;max-width: 100%;"></div> -->
+            <div class="box2"><h2 class="title is-3">Method</h2></div>
+          </div>
+
+          <h2 class="title is-3" align="center"></h2>
+          <div class="columns is-vcentered interpolation-panel">
+            <img src="./static/images/framework.png" width=auto />
+          </div>
+
+          <p>
+            Overview of PaChorus framework. PaChorus includes two branches: Partner-aware Motion Prior Learning and Host Animator. 
+            The prior learning branch is designed for pose animation generation based on the modeling of inter-singers interaction and music,
+             and the host animator branch is introduced to generate faithful lip and facial animation conditioned on the host's vocal.
+          </p>
+        </div>
+      </div>
+  </div>
+<!-- </section>
+
+<section class="section"> -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered ">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Visualization Results</h2>
+
+        <p>
+          We compare our method with the state-of-the-art methods FaceFormer, CodeTalker, SelfTalk, Imitator and Diffspeaker on our ChorusHead dataset.
+          Note
+          that only PaChorus generate choral animations with dynamic head motions while the others do not.
+        </p>
+
+        <div class="hero-body heros">
+          <div class="container">
+                <div class="publication-video">
+                  <iframe src="./static/videos/demo.mp4"
+                          frameborder="0" allowfullscreen></iframe>
+                </div>
+          </div>
+        </div>
+        <p>
+          Additionally, we present more visualized results. Notably, we showcase inference results involving multiple singers. 
+          Due to current limitations in multi-speaker audio separation models, which are not yet fully reliable for extracting voices from group singing, 
+          we synthesized choral audio using known vocal tracks. 
+          By conditioning the motion prior module on the voices of other participants during inference, we achieved plausible and credible results.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p> Thanks to <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> for the website template.
+        </p>
+      </div>
+    </div>
+  </footer>
+</section>
+</body>
+</html>
